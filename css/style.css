@@ -1,0 +1,657 @@
+:root{
+    --main-color:#1C1C1C;
+    --main-nav:#fff;
+    --main-service:#F7F7F7;
+    --main-our:#5B5B5B;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+
+}
+
+.main-nav .navbar .nav-item .nav-link.active{
+    position: relative;
+    color: var(--main-nav);
+    transition: transform 0.9s;
+}
+
+
+.main-nav .navbar .nav-item .nav-link.active::after{
+    content: '';
+    width: 80%;
+    height: 3px;
+    bottom: 0;
+    left: 5px;
+    background-color: var(--main-nav);
+    position: absolute;
+    transition: all 1s;
+}
+
+.main-nav .navbar .nav-item{
+    position: relative;
+    overflow: hidden;
+    margin-inline: 1rem;
+}
+
+.main-nav .navbar .nav-item::after{
+    content: '';
+    width: 80%;
+    height: 3px;
+    bottom: 0;
+    left: -100%;
+    background-color: var(--main-nav);
+    position: absolute;
+    transition: all 1s;
+    
+}
+
+.main-nav .navbar .nav-item:hover::after{
+    left: 0;
+}
+
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+
+}
+.home .layer .social-icon span {
+    font-size: 14px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+}
+span {
+    display: inline-block;
+}
+
+
+.animated-text span{
+    position: relative;
+}
+
+.animated-text span::before{
+    content: "Designer";
+    color: #fff;
+    animation: words 3s infinite;
+    border-right: 1px solid #fff;
+
+}
+
+
+.about-me .hero-img { 
+    padding: 0 0 0 30px;
+    position: relative;
+}
+.about-me::after{
+    content: "";
+    width: 15%;
+    height:45%;
+    position: absolute;
+    top: 114%;
+    left: 25rem;
+    bottom: -100px;
+    background-image: url(../image/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+
+
+
+.hyper  { 
+    position: relative;
+    z-index: 1;
+}
+
+.hyper::after{
+    content: "";
+    align-items: center;
+    width: 18%;
+    height: 30px;
+    background-image: url(../image/dots.png);
+    position: absolute;
+    bottom: -8px;
+    left: 40%;
+    z-index: -1;
+}
+
+.text-work {
+    position: relative;
+    z-index: 4;
+}
+.text-work::after{
+    content: "";
+    align-items: center;
+    width: 8%;
+    height: 30px;
+    background-image: url(../image/dots.png);
+    position: absolute;
+    bottom: 37px;
+    left: 46%;
+    z-index: -1;
+}
+
+.text-test{
+    position: relative;
+    z-index: 4;
+
+}
+
+.text-test::after{
+    content: "";
+    align-items: center;
+    width: 16%;
+    height: 40px;
+    background-image: url(../image/dots.png);
+    position: absolute;
+    left: 43%;
+    z-index: -1;
+}
+
+
+.clasis { 
+    position: relative;
+    z-index: 4;
+}
+.clasis::after{
+    content: "";
+    align-items: center;
+    width: 14%;
+    height: 10px;
+    padding-top: 2rem;
+    background-image: url(../image/dots.png);
+    position: absolute;
+    left: 43%;
+    z-index: -1;
+}
+
+@keyframes words {
+    0%,3%{
+        content: "D";
+    }
+    3%,6%{
+        content: "De";
+    }
+    6%,9%{
+        content: "Des";
+    }
+    12%,15%{
+        content: "Desi";
+    }
+    15%,18%{
+        content: "Desig";
+    }
+    18%,21%{
+        content: "Design";
+    }
+    21%,24%{
+        content: "Designe";
+    }
+    24%,26%{
+        content: "Designer";
+    }
+    26%,29%{
+        content: "Designe";
+    }
+    29%,32%{
+        content: "Design";
+    }
+    32%,35%{
+        content: "Desig";
+    }
+    35%,38%{
+        content: "Desi";
+    }
+    38%,41%{
+        content: "Des";
+    }
+    41%,44%{
+        content: "De";
+    }
+    44%,47%{
+        content: " ";
+    }
+
+     47%,50%{
+       content: "D";
+        }
+        50%,53%{
+            content: "De";
+        }
+        53%,55%{
+            content: "Dev";
+        }
+        55%,57%{
+            content: "Devo";
+        }
+        57%,60%{
+            content: "Devol";
+        }
+        60%,63%{
+            content: "Devole";
+        }
+        63%,65%{
+            content: "Devolep";
+        }
+        65%,67%{
+            content: "Devolepe";
+        }
+        67%,70%{
+            content: "Devoleper";
+        }
+        70%,72%{
+            content: "Devolepe";
+        }
+        72%,75%{
+            content: "Devolep";
+        }
+        75%,77%{
+            content: "Devole";
+        }
+        77%,79%{
+            content: "Devol";
+        }
+        79%,81%{
+            content: "Dev";
+        }
+        81%,83%{
+            content: "De";
+        }
+        83%,85%{
+            content: "D";
+        }
+        85%,89%{
+        content: "La";
+        }
+        89%,93%{
+            content:"Laary";
+        }
+        93%,95%{
+            content: "Da";
+        }
+         95%,97%{
+            content: "Dania";
+        }
+        97%,99%{
+            content: "Danial";
+        }
+        99%,100%{
+            content: "Dania";
+        }
+   
+            
+    }
+
+
+.home{
+    background-image: url(../image/bg.jpg);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.home .layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+
+}
+
+.text-prog{
+    padding-top: 2.5rem;
+}
+.text-p{
+    font-size: 1rem;
+}
+.progress { 
+    height: 30px;
+}
+
+.progress-bar { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+
+.progress-bar h6{
+    position: absolute;
+    right: 0;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding-top: 9px;
+    font-size: 0.9rem;
+}
+
+.progress-bar span {
+    position: absolute;
+    left: 5px;
+   
+}
+
+button { 
+    width: 22%;
+}
+
+.button-Dark { 
+    transition: all 0.5s;
+    
+}
+
+.button-Dark:hover{ 
+   background-color: var(--main-nav) !important; 
+   color: var(--main-color);
+   border: 0.9px solid var(--main-color) !important;
+   
+}
+
+.card {
+    gap: 5;
+}
+
+
+
+.text-services{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.photp { 
+    background-color: var(--main-service); 
+    padding-bottom: 5rem;
+}
+
+.card { 
+    padding: 15px;
+}
+
+.navbar {
+    transition: background-color 1s;
+    color: red !important;
+}
+
+.icon-s{
+    list-style: none;
+}
+
+.icon-s i {
+    background-color:#E7E7E7 ;
+    padding: 1rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+.card:hover .icon-s i{
+    background-color: black;
+    color: #fff;
+    transition: all 0.8s;
+}
+.nav-link{
+    color: var(--main-color);
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: #fff !important;
+    color: var(--main-color) !important;
+
+}
+.nav .nav-item .nav-link.active {
+    position: relative;
+ 
+}
+.nav  .nav-item .nav-link.active::after{
+    content: '';
+    width:100%;
+    height: 3px;
+    bottom: 0;
+    border: 2px solid var(--main-color);
+    position: absolute;
+    transition: all 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.nav-link:focus, .nav-link:hover{
+    color: var(--main-color) !important;
+}
+.text-work { 
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.item-port { 
+    position: relative;
+    transition: all 0.6s;
+}
+.item-port:hover .img-layer {
+    opacity: 1;
+    background-color: #f7f7f7fd;
+    border: 5px solid #383737b1;
+}
+.img-layer {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.9s;
+}
+.layer-3 { 
+    color: var(--main-color);
+}
+.icons-s .icon {
+    border: 2px solid black;
+    border-radius: 50%;
+    font-size: 14px;
+    width: 22%;
+    padding: 5px;
+    color: var(--main-nav);
+    background-color: var(--main-color);
+ }
+ .icons-s:hover .icon {
+    background-color: #fff;
+    color: #1C1C1C;
+ }
+
+
+.text-test { 
+    font-weight: 900;
+    padding-top: 7rem;
+    position: relative;
+
+}
+
+ .slider-img { 
+    width: 100px;
+ }
+ .carousel-indicators button { 
+    padding: 3px !important;
+    border-radius: 50%;
+    width: 1% !important;
+    background-color: rgb(56, 59, 59) !important;
+ }
+
+ .back-color { 
+    background-color: var(--main-service);
+ }
+
+
+ .icon-sas  {
+    font-size: 30px;
+    font-weight: 900;
+ }
+
+ .num { 
+    font-weight: 900;
+    font-size: 2rem;
+ }
+
+ .text-info1 {
+    background-color: var(--main-our);
+    color: var(--main-nav);
+ }
+ .img-area{
+    overflow: hidden;
+
+ }
+ .img-area img {
+    position: relative;
+    transition:  1s;
+ }
+
+
+.img-area img:hover {
+    transform: scale(1.1);
+}
+
+ .img-area .list-icon {
+    height: 78%;
+    border-radius: 2px 2px 2px 2px;
+    margin: 5px 5px 5px 5px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.901);
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: 1s;
+   
+ }
+
+ .img-area .list-icon:hover  { 
+        transform: rotateY(160deg) scale(1,1);
+        opacity: 1;
+
+ }
+ 
+ .list-icon ul li {
+    list-style: none;
+    margin: 9px;
+    padding: 5px;
+    width: 30px;
+    text-align: center;
+    font-size: 15px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    color: var(--main-nav);
+    background-color: #1C1C1C;
+ }
+
+ .list-icon ul li:hover{
+    background-color: var(--main-nav) ;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+ }
+
+.list-icon  {
+    list-style: none;
+    color: var(--main-color);
+   
+}
+
+.text-our { 
+    font-weight: 900;
+}
+
+.back-colo { 
+    background-color: #F7F7F7;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+
+
+.icons-last ul li { 
+    list-style: none;
+    background-color: rgb(226, 223, 223);
+    border-radius: 50%;
+    padding: 15px;
+    width: 20%;
+    text-align: center;
+    font-size: 25px;
+    transition: all 0.5s;
+
+}
+.text-aroow { 
+    padding-top: 2rem;
+    flex-wrap: wrap;
+}
+
+
+
+.pargr1 {
+    padding-left: 2rem;
+}
+.clasis { 
+    font-weight: 900;
+    font-size: 2.6rem;
+}
+
+.text-aroow .icons-last ul li:hover{
+    background-color: #1C1C1C;
+    color: #fff;
+}
+
+.text { 
+    width: 50%;
+    padding-top: 2rem;
+    
+}
+
+.contact-5 { 
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+}
+
+.text-bt { 
+    width: 15%;
+}
+
+
+.footer { 
+    padding: 30px;
+}
+.copyright{
+    font-size: 0.9rem;
+    color: #fff;
+
+}
+
+
+ @media (min-width: 1400px) {
+    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+      max-width: 1140px;
+    }
+  }
